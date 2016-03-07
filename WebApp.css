@@ -1,0 +1,132 @@
+nav{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width:100%;
+  z-index:1000;
+  box-shadow:0 -2px 2px rgba(255,255,255,0.32);
+}
+nav a{
+  padding: 0.5rem 1rem;
+  width:33.3%;
+  display:block;
+  float:left;
+  border:1px solid #666;
+  border-bottom: none;
+  border-left:none;
+  text-align:center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #7F450B;
+  color: #FFB062;
+  font-weight:500;
+  font-size: 1rem;
+}
+
+nav a:last-child{
+  border-right: none;
+}
+#home{
+  background: #dca875;
+}
+#cast{
+  background-color: #dca875;
+}
+#review{
+  background-color: #dca875;
+}
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  `
+}
+html,  body{
+  height: 100%;
+  min-height:100%;
+  overflow: scroll;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  background: hsl(40, 30%, 70%);
+  color:#7F450B;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+[data-role="page"]{
+  position:fixed;
+  width: 100%;
+  height:100%;
+  padding-left:2rem;
+  padding-right:2rem;
+  padding-top:2rem;
+  padding-bottom:3rem;
+  overflow:scroll;
+  transform: translate3d(0, 100%, 0); /*default position off the screen */
+    
+}
+
+[data-role="page"] h2{
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Droid Serif', serif; 
+  color:#7F450B;
+
+}
+[data-role="page"] h3{
+  font-size: 2rem;
+  font-family: 'Droid Serif', serif;
+}
+[data-role="page"] p{
+  font-size: 1.2rem;
+  
+}
+.active-page{
+  animation: slide-top 0.6s 1;
+  animation-fill-mode: forwards; 
+  z-index: 100;
+}
+.inactive-page{
+  animation: slide-bottom 0.6s 1;
+  animation-fill-mode: forwards;
+  z-index: 10;
+}
+@keyframes slide-top{
+  0%{
+    transform: translate3d(0, -100%, 0);
+  }
+  100%{
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slide-bottom{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(0, 100%, 0);
+  }
+}
+.hidden{
+  display:none;
+}
+
+#castimg1
+{
+  vertical-align: middle;
+  padding-right:10px;
+  padding-bottom:10px;
+    
+}
+
+
+
+
+#review > ol
+{
+    padding-top:20px !important;
+}
+#pcast
+{
+    padding-top:20px;
+}
+
